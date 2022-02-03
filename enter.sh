@@ -5,7 +5,7 @@ set -e
 # Provides len(/mnt/parity/*) parity for the /mnt/data/* mounts.
 # Stores snapraid content lists on parity disks & /var.
 
-echo content /var/snapraid/snapraid.content >> /etc/snapraid.conf
+echo content /var/snapraid/snapraid.content > /etc/snapraid.conf
 
 i=1
 for d in /mnt/parity/*; do
